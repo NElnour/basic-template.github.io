@@ -26,35 +26,18 @@ section {
     text-align: center;
 }
 
+.navbar-collapse>ul {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
 #photoCreditIcon {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 #photoCreditIcon:hover {
     opacity: 1;
-}
-
-.dropdown-menu {
-    width: 250px;
-}
-
-
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-
-.nav-link {
-    color: rgba(85, 85, 85, 0.6);
-}
-
-.nav-link:hover {
-    color: rgba(85, 85, 85, 1);
-}
-
-.nav-item {
-    padding-left: 10%;
 }
 
 .navbar-nav li:hover>.dropdown-menu {

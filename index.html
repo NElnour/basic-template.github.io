@@ -7,6 +7,7 @@
     <title>Basic Template</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/navigation.css" />
     <link rel="stylesheet" type="text/css" href="./css/testimonial.css" />
     <link
       rel="stylesheet"
@@ -28,105 +29,80 @@
   <div style="background-color: white; height: 50px;"></div>
 
   <body>
-    <!--Code modified from Tushar https://stackoverflow.com/a/51413876 -->
-    <div class="navbar navbar-expand-lg" id="navMenu">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="collapse navbar-collapse"
-        id="navbarNav"
-        style="display: inline-block;"
-      >
-        <ul class="navbar-nav navbar-center" style="font-size: 24px">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="#" style="color: rgb(85, 85, 85); font-size: 32px;"
-              >[LOGO]</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+    <!--Navigation Menu-->
+    <div id="main-wrapper">
+      <div class="logo">
+        <a href="#"><img src="./imgs/logo.png" alt=""></a>
+      </div>
+      <div class="main_nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="navbar-collapse" id="photoCredit">
-        <ul class="navbar-nav ml-auto">
-          <li
-            class="nav-item dropdown"
-            style="position:absolute; left: 100px;
-            top: 200px;"
+    </div>
+
+    <!--Code modified from Tushar https://stackoverflow.com/a/51413876 -->
+    <div class="navbar-collapse" id="photoCredit">
+      <ul
+        class="navbar-nav ml-auto"
+      >
+        <li class="nav-item dropdown">
+          <a
+            id="photoCreditIcon"
+            class="nav-link"
+            id="photoCreditInfo"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <img
+              src="https://www.shareicon.net/data/128x128/2015/08/23/89385_camera_512x512.png"
+              style="width: 32px; height: 32px;"
+            />
+          </a>
+          <div
+            class="dropdown-menu"
+            style="background-color: rgba(0, 0, 0, 0.747); border: none; position: absolute; left: 70%;"
+            aria-labelledby="navbarDropdownMenuLink"
           >
             <a
-              id="photoCreditIcon"
-              class="nav-link"
-              id="photoCreditInfo"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
+              class="dropdown-item"
+              style="background-color: rgba(0, 0, 0, 0); color: white;"
             >
-              <img
-                src="https://www.shareicon.net/data/128x128/2015/08/23/89385_camera_512x512.png"
-                style="width: 32px; height: 32px;"
-              />
-            </a>
-            <div
-              class="dropdown-menu"
-              style="background-color: rgba(0, 0, 0, 0.747); border: none;"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
+              <strong>Photo credits:</strong> <br />
+              <strong>Kevin Mueller on Unsplash</strong><br />
               <a
-                class="dropdown-item"
-                style="background-color: rgba(0, 0, 0, 0); color: white;"
-              >
-                <strong>Photo credits:</strong> <br />
-                <strong>Kevin Mueller on Unsplash</strong><br />
-                <a
-                  style='background-color:rgba(0, 0, 0, 0)black;color:white;text-decoration:none;padding:4px 20px;
+                style='background-color:rgba(0, 0, 0, 0)black;color:white;text-decoration:none;padding:4px 20px;
                 font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
                 font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px'
-                  href="https://unsplash.com/@kevinmueller?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Download free do whatever you want high-resolution photos from Kevin Mueller"
-                  ><span style="display:inline-block;padding:2px 3px"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
-                      viewBox="0 0 32 32"
-                    >
-                      <title>unsplash-logo</title>
-                      <path
-                        d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
-                      ></path></svg></span
-                  ><span style="display:inline-block;padding:2px 3px"
-                    >Kevin Mueller</span
-                  ></a
-                >
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+                href="https://unsplash.com/@kevinmueller?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Download free do whatever you want high-resolution photos from Kevin Mueller"
+                ><span style="display:inline-block;padding:2px 3px"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>unsplash-logo</title>
+                    <path
+                      d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+                    ></path></svg></span
+                ><span style="display:inline-block;padding:2px 3px"
+                  >Kevin Mueller</span
+                ></a
+              >
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
     <!----->
 
