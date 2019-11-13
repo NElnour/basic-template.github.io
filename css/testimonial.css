@@ -1,0 +1,206 @@
+
+.box-left {
+    width: 50%;
+    min-height: 200px;
+    font-size: 24px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    padding: 2%;
+
+    -webkit-animation: slidein 0.5s infinite ease-in-out;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slidein 0.5s infinite ease-in-out;
+    /* Firefox < 16 */
+    -ms-animation: slidein 0.5s infinite ease-in-out;
+    /* Internet Explorer */
+    -o-animation: slidein 0.5s infinite ease-in-out;
+    /* Opera < 12.1 */
+    animation: slidein 0.5s ease-in-out forwards;
+}
+
+.box-left:active {
+    animation-play-state: paused;
+}
+
+
+@keyframes slidein {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slidein {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidein {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slidein {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+.box-right {
+    width: 50%;
+    min-height: 200px;
+    font-size: 24px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    padding: 2%;
+
+    -webkit-animation: slideout 0.5s infinite ease-in-out;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: slideout 0.5s infinite ease-in-out;
+    /* Firefox < 16 */
+    -ms-animation: slideout 0.5s infinite ease-in-out;
+    /* Internet Explorer */
+    -o-animation: slideout 0.5s infinite ease-in-out;
+    /* Opera < 12.1 */
+    animation: slideout 0.5s ease-in-out forwards;
+}
+
+.box-right:active {
+    animation-play-state: paused;
+}
+
+
+@keyframes slideout {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideout {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideout {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideout {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slideout {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: -50%;
+    }
+}
+
+/* Generated with https://leaverou.github.io/bubbly/ */
+.speech-bubble-right {
+    position: relative;
+    background: rgba(172, 93, 168, 0.849);
+    border-radius: .4em;
+}
+
+.speech-bubble-right:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgba(172, 93, 168, 0.849);
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+.speech-bubble-left {
+    position: relative;
+    background: rgba(94, 143, 135, 0.849);
+    border-radius: .4em;
+}
+
+.speech-bubble-left:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgba(94, 143, 135, 0.849);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+/****/
