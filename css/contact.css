@@ -4,4 +4,13 @@
     border-left: none !important;
     border-right: none !important;
     border-radius: 0px !important;
+    font-size: 18px !important;
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+textarea {
+    height: 300px !important;
 }
