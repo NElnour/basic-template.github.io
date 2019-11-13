@@ -4,12 +4,12 @@
 }
 
 .main_nav {
-    margin: 0% auto;
-    width: 90%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .main_nav>ul {
-    margin: 0%;
+    margin: 0px;
     padding: 33px 0 0;
     list-style: none;
     text-align: right;
@@ -22,10 +22,15 @@
 
 .main_nav>ul>li:nth-child(1) {
     float: left;
+    padding-left: 15%;
 }
 
 .main_nav>ul>li:nth-child(2) {
     float: left;
+}
+
+.main_nav>ul>li:nth-child(4) {
+    padding-right: 9%;
 }
 
 .main_nav>ul>li>a {
@@ -33,7 +38,7 @@
     font-size: 28px;
     text-decoration: none;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 40px;
     text-transform: uppercase;
 }
 
