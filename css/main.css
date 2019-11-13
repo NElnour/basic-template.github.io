@@ -1,3 +1,5 @@
+@import url("https://use.fontawesome.com/releases/v5.11.1/css/all.css");
+
 html,
 body {
     background-color: white;
@@ -53,6 +55,14 @@ section {
     -o-animation: fadein 1s;
     /* Opera < 12.1 */
     animation: fadein 1s;
+}
+
+#photoCreditIcon {
+    opacity: 0.6;
+}
+
+#photoCreditIcon:hover {
+    opacity: 1;
 }
 
 .dropdown-menu {
