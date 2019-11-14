@@ -1,8 +1,50 @@
+@media screen and (min-width: 601px) {
+
+    .box-left,
+    .box-right {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .box-left {
+        font-size: 18px;
+        width: 100% !important;
+        min-height: 300px;
+
+        -webkit-animation: slidein-full-left 0.5s infinite ease-in-out !important;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: slidein-full-left 0.5s infinite ease-in-out !important;
+        /* Firefox < 16 */
+        -ms-animation: slidein-full-left 0.5s infinite ease-in-out !important;
+        /* Internet Explorer */
+        -o-animation: slidein-full-left 0.5s infinite ease-in-out !important;
+        /* Opera < 12.1 */
+        animation: slidein-full-left 0.5s ease-in-out forwards!important;
+    }
+
+    .box-right {
+        font-size: 18px;
+        width: 100% !important;
+        min-height: 300px;
+
+        -webkit-animation: slidein-full-right 0.5s infinite ease-in-out !important;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: slidein-full-right 0.5s infinite ease-in-out !important;
+        /* Firefox < 16 */
+        -ms-animation: slidein-full-right 0.5s infinite ease-in-out !important;
+        /* Internet Explorer */
+        -o-animation: slidein-full-right 0.5s infinite ease-in-out !important;
+        /* Opera < 12.1 */
+        animation: slidein-full-right 0.5s ease-in-out forwards !important;
+    }
+
+}
 
 .box-left {
     width: 50%;
     min-height: 200px;
-    font-size: 24px;
     border: none;
     color: white;
     background-color: transparent;
@@ -83,7 +125,6 @@
 .box-right {
     width: 50%;
     min-height: 200px;
-    font-size: 24px;
     border: none;
     color: white;
     background-color: transparent;
@@ -204,3 +245,113 @@
 }
 
 /****/
+
+@keyframes slidein-full-left {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slidein-full-left {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidein-full-left {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein-full-left {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slidein-full-left {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/***********************/
+
+@keyframes slidein-full-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slidein-full-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidein-full-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein-full-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slidein-full-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}

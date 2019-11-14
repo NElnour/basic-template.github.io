@@ -1,5 +1,22 @@
 @import url("https://use.fontawesome.com/releases/v5.11.1/css/all.css");
 
+@media screen and (min-width: 601px) {
+
+    #about>#description {
+        font-size: 36px;
+        padding: 2%;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+
+    #about>#description {
+        font-size: 28px !important;
+        padding: 2%;
+    }    
+}
+
+
 html,
 body {
     background-color: white;

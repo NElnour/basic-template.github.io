@@ -25,23 +25,25 @@
       href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/contact.js"></script>
   </head>
   <div style="background-color: white; height: 50px;"></div>
 
   <body>
     <!--Navigation Menu-->
-    <div id="main-wrapper">
-      <div class="logo">
-        <a href="#"><img src="./imgs/logo.png" alt=""/></a>
-      </div>
-      <div class="main_nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="parallax">
+      <div id="main-wrapper">
+        <div class="logo">
+          <a href="#"><img src="./imgs/logo.png" alt=""/></a>
+        </div>
+        <div class="main_nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -114,7 +116,7 @@
       >
         About us
       </div>
-      <div style="font-size:36px; padding: 2%;">
+      <div id="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -355,34 +357,42 @@
         <!---contact info-->
         <div class="card-header">
           <div class="container">
-          <div class="row">
+            <div class="row">
               <div class="col-sm">
-          <i class="fa fa-map-marked-alt fa-lg" style="color: steelblue;"></i>&nbsp;
-          &nbsp; Earth 
+                <i
+                  class="fa fa-map-marked-alt fa-lg"
+                  style="color: steelblue;"
+                ></i
+                >&nbsp; &nbsp; Earth
               </div>
               <div class="col-sm">
-                  <i class="fa fa-phone-alt fa-lg" style="color: steelblue;"></i>&nbsp;
-                  &nbsp; (999) 999-9999
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <i class="fa fa-envelope fa-lg" style="color: steelblue;"></i>&nbsp; &nbsp;
-                username@server.com
+                <i class="fa fa-phone-alt fa-lg" style="color: steelblue;"></i
+                >&nbsp; &nbsp; (999) 999-9999
+              </div>
             </div>
+            <div class="row">
+              <div class="col-sm">
+                <i class="fa fa-envelope fa-lg" style="color: steelblue;"></i
+                >&nbsp; &nbsp; username@server.com
+              </div>
 
-            <div class="col-sm">
-          <i class="fas fa-clock fa-lg" style="color: steelblue;"></i>&nbsp; &nbsp;
-          09:00 - 17:00 
-        </div>
+              <div class="col-sm">
+                <i class="fas fa-clock fa-lg" style="color: steelblue;"></i
+                >&nbsp; &nbsp; 09:00 - 17:00
+              </div>
+            </div>
           </div>
         </div>
-      </div>
         <!----->
 
         <!---contact us form-->
         <div class="card-body">
-          <form>
+          <form
+            id="contact-us"
+            name="contact-us"
+            action="send.php"
+            method="POST"
+          >
             <div class="form-row">
               <div class="col-md-6 mb-6 p-2">
                 <input
@@ -424,37 +434,37 @@
               </div>
             </div>
             <div class="col-md-12 mb-12 p-1">
-            <div class="md-form form-sm">
-              <input
-                type="text"
-                id="subject"
-                class="form-control"
-                placeholder="Subject"
-                required
-              />
+              <div class="md-form form-sm">
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="col-md-12 mb-12 p-1">
-            <div class="md-form form-sm">
-              <textarea
-                type="text"
-                id="message"
-                class="md-textarea form-control"
-                placeholder="Your message"
-                required
-              ></textarea>
+            <div class="col-md-12 mb-12 p-1">
+              <div class="md-form form-sm">
+                <textarea
+                  type="text"
+                  id="message"
+                  class="md-textarea form-control"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="col-md-12 mb-12 p-1">
-            <button
-              type="submit"
-              class="btn btn-primary"
-              style="font-size: 18px; background-color: steelblue;"
-              onclick="organizeMessage()"
-            >
-              Send
-            </button>
-          </div>
+            <div class="col-md-12 mb-12 p-1">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="font-size: 18px; background-color: steelblue;"
+                onclick="parseAndSend()"
+              >
+                Send
+              </button>
+            </div>
           </form>
         </div>
         <!---->
